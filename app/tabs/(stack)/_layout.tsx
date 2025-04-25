@@ -18,13 +18,6 @@ const StackLayout = () => {
         },
       }}
     >
-      {/* <Stack.Screen
-        name="auth/index"
-        options={{
-          title: "Login",
-          headerShown: false,
-        }}
-      /> */}
       <Stack.Screen
         name="dashboard/index"
         options={{
@@ -38,13 +31,6 @@ const StackLayout = () => {
           title: "Forgot Password",
         }}
       />
-      {/* <Stack.Screen
-        name="tabs"
-        options={{
-          headerShown: false,
-        }}
-      /> */}
-      
       <Stack.Screen
         name="accounts/index"
         options={{

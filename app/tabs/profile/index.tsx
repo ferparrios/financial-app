@@ -1,21 +1,19 @@
-import React from 'react';
-import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
-// import Icon from 'react-native-vector-icons/MaterialIcons';
-// import { theme } from '../../constants/theme';
-// import { useAuth } from '../../context/AuthContext';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { theme } from '@/constants/theme';
+import React from "react";
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+} from "react-native";
+
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { theme } from "@/constants/theme";
 
 const ProfileScreen = () => {
-  // const { user } = useAuth();
-
   return (
     <ScrollView style={styles.container}>
       <View style={styles.profileHeader}>
-        {/* <Image
-          source={user?.avatar ? { uri: user.avatar } : require('../../../assets/images/user-default.png')}
-          style={styles.avatar}
-        /> */}
         <Text style={styles.userName}>User</Text>
         <Text style={styles.userEmail}>user@example.com</Text>
       </View>
@@ -23,18 +21,29 @@ const ProfileScreen = () => {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Personal Information</Text>
         <View style={styles.infoItem}>
-          {/* <Icon name="person" size={20} color={theme.colors.textSecondary} /> */}
-          <MaterialIcons name="person" size={24} color={theme.colors.textSecondary} />
+          <MaterialIcons
+            name="person"
+            size={24}
+            color={theme.colors.textSecondary}
+          />
           <Text style={styles.infoText}>Name: No Name</Text>
         </View>
         <View style={styles.infoItem}>
-        <MaterialIcons name="email" size={24} color={theme.colors.textSecondary} />
-          {/* <Icon name="email" size={20} color={theme.colors.textSecondary} /> */}
+          <MaterialIcons
+            name="email"
+            size={24}
+            color={theme.colors.textSecondary}
+          />
+
           <Text style={styles.infoText}>Email: No Email</Text>
         </View>
         <View style={styles.infoItem}>
-        <MaterialIcons name="phone" size={24} color={theme.colors.textSecondary} />
-          {/* <Icon name="phone" size={20} color={theme.colors.textSecondary} /> */}
+          <MaterialIcons
+            name="phone"
+            size={24}
+            color={theme.colors.textSecondary}
+          />
+
           <Text style={styles.infoText}>Phone: +1 234 567 890</Text>
         </View>
       </View>
@@ -43,13 +52,19 @@ const ProfileScreen = () => {
         <Text style={styles.sectionTitle}>Security</Text>
         <TouchableOpacity style={styles.actionButton}>
           <Text style={styles.actionText}>Change password</Text>
-          <MaterialIcons name="chevron-left" size={24} color={theme.colors.textSecondary} />
-          {/* <Icon name="chevron-right" size={20} color={theme.colors.textSecondary} /> */}
+          <MaterialIcons
+            name="chevron-left"
+            size={24}
+            color={theme.colors.textSecondary}
+          />
         </TouchableOpacity>
         <TouchableOpacity style={styles.actionButton}>
           <Text style={styles.actionText}>Two factor authentication</Text>
-          <MaterialIcons name="chevron-right" size={24} color={theme.colors.textSecondary} />
-          {/* <Icon name="chevron-right" size={20} color={theme.colors.textSecondary} /> */}
+          <MaterialIcons
+            name="chevron-right"
+            size={24}
+            color={theme.colors.textSecondary}
+          />
         </TouchableOpacity>
       </View>
 
@@ -66,7 +81,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.background,
   },
   profileHeader: {
-    alignItems: 'center',
+    alignItems: "center",
     padding: theme.spacing.xl,
     backgroundColor: theme.colors.surface,
     marginBottom: theme.spacing.md,
@@ -79,7 +94,7 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: theme.text.xxlarge,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: theme.colors.text,
     marginBottom: theme.spacing.xs,
   },
@@ -96,13 +111,13 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: theme.text.large,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: theme.colors.text,
     marginBottom: theme.spacing.md,
   },
   infoItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingVertical: theme.spacing.sm,
     borderBottomWidth: 1,
     borderBottomColor: theme.colors.border,
@@ -114,9 +129,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   actionButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingVertical: theme.spacing.sm,
     borderBottomWidth: 1,
     borderBottomColor: theme.colors.border,
@@ -129,14 +144,14 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.surface,
     borderRadius: theme.radius.md,
     padding: theme.spacing.md,
-    alignItems: 'center',
+    alignItems: "center",
     margin: theme.spacing.md,
     marginTop: theme.spacing.lg,
   },
   logoutText: {
     fontSize: theme.text.medium,
     color: theme.colors.error,
-    fontWeight: '500',
+    fontWeight: "500",
   },
 });
 

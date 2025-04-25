@@ -3,16 +3,13 @@ import {
   View,
   StyleSheet,
   KeyboardAvoidingView,
-  Image,
   TouchableOpacity,
   Text,
 } from "react-native";
-// import CustomTextInput from '../../../components/CustomTextInput';
-// import { theme } from '../../../constants/theme';
+
 import { router } from "expo-router";
 import CustomTextInput from "@/components/CustomTextInput";
 import { theme } from "@/constants/theme";
-// import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const ForgotPasswordScreen = () => {
   const [email, setEmail] = useState("");
@@ -63,7 +60,6 @@ const ForgotPasswordScreen = () => {
           style={styles.backButton}
           onPress={() => router.back()}
         >
-          {/* <Icon name="arrow-back" size={20} color={theme.colors.primary} /> */}
           <Text style={styles.backButtonText}>Back to Login</Text>
         </TouchableOpacity>
       </View>

@@ -61,7 +61,9 @@ const DashboardScreen = () => {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recent Transactions</Text>
-            <TouchableOpacity onPress={() => router.push("/tabs/(stack)/transactions")}>
+            <TouchableOpacity
+              onPress={() => router.push("/tabs/(stack)/transactions")}
+            >
               <Text style={styles.sectionLink}>See More</Text>
             </TouchableOpacity>
           </View>

@@ -3,10 +3,11 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 const TabsLayout = () => {
   return (
-    <Tabs 
-    screenOptions={{
-      headerShown: false
-    }}>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Tabs.Screen
         name="(stack)"
         options={{
