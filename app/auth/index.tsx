@@ -12,8 +12,8 @@ import {
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 const LoginScreen = () => {
-  const [email, setEmail] = useState("usuario@ejemplo.com");
-  const [password, setPassword] = useState("123456");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleLogin = async () => {
@@ -38,7 +38,7 @@ const LoginScreen = () => {
           onChangeText={setEmail}
           autoCapitalize="none"
           keyboardType="email-address"
-          placeholder="usuario@ejemplo.com"
+          placeholder="user@example.com"
         />
 
         <CustomTextInput
